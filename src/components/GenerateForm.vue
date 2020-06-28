@@ -13,6 +13,7 @@
             :gutter="item.options.gutter ? item.options.gutter : 0"
             :justify="item.options.justify"
             :align="item.options.align"
+            :searchResult="item.options.searchResult"
           >
             <el-col v-for="(col, colIndex) in item.columns" :key="colIndex" :span="col.span">
               

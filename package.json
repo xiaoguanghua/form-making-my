@@ -1,9 +1,9 @@
 {
-  "name": "form-making",
+  "name": "form-making-m",
   "description": "A designer and generator of form base on Vue.js, make form development simple and efficient.",
-  "version": "1.2.8",
-  "author": "GavinZhulei",
-  "license": "LGPL",
+  "version": "1.0.1",
+  "author": "xiaoguanghua",
+  "license": "ISC",
   "keywords": [
     "component",
     "vue",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/GavinZhuLei/vue-form-making"
+    "url": "git+https://github.com/xiaoguanghua/form-making-my.git"
   },
   "main": "dist/FormMaking.common.js",
   "scripts": {
@@ -74,5 +74,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/GavinZhuLei/vue-form-making/issues"
+  },
+  "homepage": "https://github.com/GavinZhuLei/vue-form-making#readme"
 }

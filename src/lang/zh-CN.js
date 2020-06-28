@@ -79,6 +79,7 @@ export default {
         title: '字段属性',
         model: '字段标识',
         standardType: '绑定参数名称',
+        searchResult: '待输出流程结果名称',
         name: '参数标题',
         width: '宽度',
         height: '高度',

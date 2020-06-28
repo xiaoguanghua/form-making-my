@@ -314,6 +314,7 @@ export const layoutComponents = [
       }
     ],
     options: {
+      searchResult: '',
       gutter: 0,
       justify: 'start',
       align: 'top'
