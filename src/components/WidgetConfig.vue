@@ -1,14 +1,14 @@
 <template>
   <div v-if="show">
     <el-form label-position="top">
+      <el-form-item :label="$t('fm.config.widget.model')" v-if="data.type!='grid'">
+        <el-input v-model="data.model"></el-input>
+      </el-form-item>
       <el-form-item :label="$t('fm.config.widget.standardType')" v-if="Object.keys(data.options).indexOf('standardType')>=0 && (data.type!='time' || data.type!='date')">
         <el-input v-model="data.options.standardType"></el-input>
       </el-form-item>
       <el-form-item :label="$t('fm.config.widget.searchResult')" v-if="data.type=='grid'">
         <el-input v-model="data.options.searchResult"></el-input>
-      </el-form-item>
-      <el-form-item :label="$t('fm.config.widget.model')" v-if="data.type!='grid'">
-        <el-input v-model="data.model"></el-input>
       </el-form-item>
       <el-form-item :label="$t('fm.config.widget.name')" v-if="data.type!='grid'">
         <el-input v-model="data.name"></el-input>
