@@ -11,6 +11,8 @@ export const basicComponents = [
       pattern: '',
       placeholder: '',
       disabled: false,
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -23,7 +25,9 @@ export const basicComponents = [
       required: false,
       disabled: false,
       pattern: '',
-      placeholder: ''
+      placeholder: '',
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -38,7 +42,9 @@ export const basicComponents = [
       max: '',
       step: 1,
       disabled: false,
-      controlsPosition: ''
+      controlsPosition: '',
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -73,6 +79,8 @@ export const basicComponents = [
       },
       remoteFunc: '',
       disabled: false,
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -104,6 +112,8 @@ export const basicComponents = [
       },
       remoteFunc: '',
       disabled: false,
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -124,6 +134,8 @@ export const basicComponents = [
       format: 'HH:mm:ss',
       required: false,
       width: '',
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -144,6 +156,8 @@ export const basicComponents = [
       timestamp: false,
       required: false,
       width: '',
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -155,7 +169,9 @@ export const basicComponents = [
       max: 5,
       disabled: false,
       allowHalf: false,
-      required: false
+      required: false,
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -166,7 +182,9 @@ export const basicComponents = [
       defaultValue: '',
       disabled: false,
       showAlpha: false,
-      required: false
+      required: false,
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -199,7 +217,9 @@ export const basicComponents = [
         value: 'value',
         label: 'label'
       },
-      remoteFunc: ''
+      remoteFunc: '',
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -210,6 +230,8 @@ export const basicComponents = [
       defaultValue: false,
       required: false,
       disabled: false,
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -225,7 +247,9 @@ export const basicComponents = [
       step: 1,
       showInput: false,
       range: false,
-      width: ''
+      width: '',
+      isChecked: true,
+      showCheck: false
     }
   },
   {
@@ -235,6 +259,8 @@ export const basicComponents = [
       standardType:'',
       defaultValue: 'This is a text',
       customClass: '',
+      isChecked: true,
+      showCheck: false
     }
   }
 ]
@@ -244,7 +270,8 @@ export const advanceComponents = [
     type: 'blank',
     icon: 'icon-zidingyishuju',
     options: {
-      defaultType: 'String'
+      defaultType: 'String',
+      isChecked: true
     }
   },
   {
@@ -267,7 +294,8 @@ export const advanceComponents = [
       isDelete: false,
       min: 0,
       isEdit: false,
-      action: 'https://jsonplaceholder.typicode.com/photos/'
+      action: 'https://jsonplaceholder.typicode.com/photos/',
+      isChecked: true
     }
   },
   {
@@ -275,7 +303,8 @@ export const advanceComponents = [
     icon: 'icon-fuwenbenkuang',
     options: {
       defaultValue: '',
-      width: ''
+      width: '',
+      isChecked: true
     }
   },
   {
@@ -294,7 +323,8 @@ export const advanceComponents = [
         label: 'label',
         children: 'children'
       },
-      remoteFunc: ''
+      remoteFunc: '',
+      isChecked: true
     }
   }
 ]
@@ -317,7 +347,8 @@ export const layoutComponents = [
       searchResult: '',
       gutter: 0,
       justify: 'start',
-      align: 'top'
+      align: 'top',
+      isChecked: true
     }
   }
 ]
