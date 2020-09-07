@@ -1,6 +1,5 @@
 <template>
   <el-form-item :label="widget.name" :prop="widget.model">
-    <el-checkbox v-show="widget.options.showCheck" v-model="widget.options.isChecked">是否开放参数</el-checkbox>
     <template v-if="widget.type == 'input'">
       <el-input
         v-if="widget.options.dataType == 'number' || widget.options.dataType == 'integer' || widget.options.dataType == 'float'"
@@ -195,6 +194,7 @@
     <template v-if="widget.type == 'text'">
       <span>{{dataModel}}</span>
     </template>
+    <el-checkbox style="margin-left: 10px" v-show="widget.options.showCheck" v-model="widget.options.isChecked">是否开放参数</el-checkbox>
   </el-form-item>
 </template>
 
