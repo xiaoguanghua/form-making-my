@@ -11,7 +11,6 @@
             :style="{width: element.options.width}"
             :placeholder="element.options.placeholder"
             :disabled="element.options.disabled"
-            :standardType="element.options.standardType"
           ></el-input>
         </template>
 

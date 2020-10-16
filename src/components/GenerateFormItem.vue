@@ -8,7 +8,6 @@
         :placeholder="widget.options.placeholder"
         :style="{width: widget.options.width}"
         :disabled="widget.options.disabled"
-        :standardType="widget.options.standardType"
       ></el-input>
       <el-input
         v-else

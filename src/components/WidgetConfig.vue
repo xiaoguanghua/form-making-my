@@ -4,9 +4,9 @@
       <el-form-item :label="$t('fm.config.widget.model')" v-if="data.type!='grid'">
         <el-input v-model="data.model"></el-input>
       </el-form-item>
-      <el-form-item :label="$t('fm.config.widget.standardType')" v-if="Object.keys(data.options).indexOf('standardType')>=0 && (data.type!='time' || data.type!='date')">
+      <!-- <el-form-item :label="$t('fm.config.widget.standardType')" v-if="Object.keys(data.options).indexOf('standardType')>=0 && (data.type!='time' || data.type!='date')">
         <el-input v-model="data.options.standardType"></el-input>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item :label="$t('fm.config.widget.searchResult')" v-if="data.type=='grid'">
         <el-input v-model="data.options.searchResult"></el-input>
       </el-form-item>
@@ -160,9 +160,9 @@
         </div>
       </el-form-item>
 
-      <el-form-item :label="$t('fm.config.widget.defaultValue')" v-if="Object.keys(data.options).indexOf('defaultValue')>=0 && (data.type == 'textarea' || data.type == 'input' || data.type=='rate' || data.type=='color' || data.type=='switch' || data.type=='standardType')">
+      <el-form-item :label="$t('fm.config.widget.defaultValue')" v-if="Object.keys(data.options).indexOf('defaultValue')>=0 && (data.type == 'textarea' || data.type == 'input' || data.type=='rate' || data.type=='color' || data.type=='switch')">
         <el-input v-if="data.type=='textarea'" type="textarea" :rows="5" v-model="data.options.defaultValue"></el-input>
-        <el-input v-if="data.type=='standardType'" type="input" :rows="5" v-model="data.options.defaultValue"></el-input>
+        <!-- <el-input v-if="data.type=='standardType'" type="input" :rows="5" v-model="data.options.defaultValue"></el-input> -->
         <el-input v-if="data.type=='input'" v-model="data.options.defaultValue"></el-input>
         <el-rate v-if="data.type == 'rate'" style="display:inline-block;vertical-align: middle;" :max="data.options.max" :allow-half="data.options.allowHalf" v-model="data.options.defaultValue"></el-rate>
         <el-button type="text" v-if="data.type == 'rate'" style="display:inline-block;vertical-align: middle;margin-left: 10px;" @click="data.options.defaultValue=0">{{$t('fm.actions.clear')}}</el-button>

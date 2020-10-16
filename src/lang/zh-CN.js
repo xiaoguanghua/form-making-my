@@ -77,8 +77,8 @@ export default {
             },
             widget: {
                 title: '字段属性',
-                model: '绑定参数名称',
-                standardType: '字段标识',
+                model: '参数名称',
+                // standardType: '字段标识',
                 searchResult: '待输出流程结果名称',
                 name: '参数标题',
                 width: '宽度',
