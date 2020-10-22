@@ -193,6 +193,7 @@
     <template v-if="widget.type == 'text'">
       <span>{{dataModel}}</span>
     </template>
+    {{widget.options.showCheck}}---
     <el-checkbox style="margin-left: 10px" v-show="widget.options.showCheck" v-model="widget.options.isChecked">是否开放参数</el-checkbox>
   </el-form-item>
 </template>

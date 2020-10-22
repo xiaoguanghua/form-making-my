@@ -11,7 +11,7 @@ export const basicComponents = [{
             placeholder: '',
             disabled: false,
             isChecked: false,
-            showCheck: false
+            showCheck: true
         }
     },
     {
@@ -215,7 +215,7 @@ export const basicComponents = [{
             },
             remoteFunc: '',
             isChecked: false,
-            showCheck: false
+            showCheck: true
         }
     },
     {
