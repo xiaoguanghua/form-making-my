@@ -2,7 +2,7 @@
   <div v-if="show">
     <el-form label-position="top">
       <el-form-item :label="$t('fm.config.widget.model')" v-if="data.type!='grid'">
-        <el-input v-model="data.model"></el-input>
+        <el-input v-model="data.model" @input="changeInput()"></el-input>
       </el-form-item>
       <!-- <el-form-item :label="$t('fm.config.widget.standardType')" v-if="Object.keys(data.options).indexOf('standardType')>=0 && (data.type!='time' || data.type!='date')">
         <el-input v-model="data.options.standardType"></el-input>
@@ -370,6 +370,11 @@ export default {
     }
   },
   methods: {
+    changeInput() {
+      if(/[\u4E00-\u9FA5]/g.test(this.data.model)) {
+        this.data.model = '';
+      }
+    },
     handleOptionsRemove (index) {
       if (this.data.type === 'grid') {
         this.data.columns.splice(index, 1)
