@@ -2,7 +2,7 @@
   <el-form-item :label="widget.name" :prop="widget.model">
     <template v-if="widget.type == 'input'">
       <el-input
-        v-if="widget.options.dataType == 'number' || widget.options.dataType == 'integer' || widget.options.dataType == 'float'"
+        v-if="widget.options.dataType == 'integer'"
         type="number"
         v-model.number="dataModel"
         :placeholder="widget.options.placeholder"
