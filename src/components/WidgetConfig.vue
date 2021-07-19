@@ -2,7 +2,7 @@
   <div v-if="show">
     <el-form label-position="top">
       <el-form-item :label="$t('fm.config.widget.model')" v-if="data.type!='grid'">
-        <el-input v-model="data.model" @input="changeInput()"></el-input>
+        <el-input v-model="data.model" @input="changeInput()" maxlength="8" show-word-limit></el-input>
       </el-form-item>
       <!-- <el-form-item :label="$t('fm.config.widget.standardType')" v-if="Object.keys(data.options).indexOf('standardType')>=0 && (data.type!='time' || data.type!='date')">
         <el-input v-model="data.options.standardType"></el-input>
@@ -11,7 +11,7 @@
         <el-input v-model="data.options.searchResult"></el-input>
       </el-form-item>
       <el-form-item :label="$t('fm.config.widget.name')" v-if="data.type!='grid'">
-        <el-input v-model="data.name"></el-input>
+        <el-input v-model="data.name" maxlength="8" show-word-limit></el-input>
       </el-form-item>
       <el-form-item :label="$t('fm.config.widget.width')" v-if="Object.keys(data.options).indexOf('width')>=0">
         <el-input v-model="data.options.width"></el-input>
