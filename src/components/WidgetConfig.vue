@@ -2,7 +2,7 @@
   <div v-if="show">
     <el-form label-position="top">
       <el-form-item :label="$t('fm.config.widget.model')" v-if="data.type!='grid'">
-        <el-input v-model="data.model" @input="changeInput()" maxlength="8" show-word-limit></el-input>
+        <el-input v-model="data.model" @input="changeInput()" maxlength="8" show-word-limit placeholder=""></el-input>
       </el-form-item>
       <!-- <el-form-item :label="$t('fm.config.widget.standardType')" v-if="Object.keys(data.options).indexOf('standardType')>=0 && (data.type!='time' || data.type!='date')">
         <el-input v-model="data.options.standardType"></el-input>
@@ -371,7 +371,17 @@ export default {
   },
   methods: {
     changeInput() {
+      const reg = /^[a-zA-Z0-9_-]{1,8}$/;
       if(/[\u4E00-\u9FA5]/g.test(this.data.model)) {
+        this.data.model = '';
+      }
+      if(!reg.test(this.data.model)){console.log(312)
+        this.$message({
+          message: '请输入8个以内字符，可包含英文、数字、下划线、横杠',
+          type: 'error',
+          duration: '3000',
+          showClose: true
+        });
         this.data.model = '';
       }
     },
