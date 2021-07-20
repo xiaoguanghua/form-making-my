@@ -1,7 +1,7 @@
 {
   "name": "form-making-m",
   "description": "A designer and generator of form base on Vue.js, make form development simple and efficient.",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "author": "xiaoguanghua",
   "license": "ISC",
   "keywords": [
